@@ -18,14 +18,20 @@ figure{
 a{
     text-decoration: none;
 }
+h2{
+    text-align: center;
+}
 
 /* body style */
+
 body{
     margin: 0;
     background: rgb(180,58,128);
     background: linear-gradient(8deg, rgba(180,58,128,1) 15%, rgb(207, 16, 16) 50%, rgb(228, 140, 18) 79%);
 }
+
 /* main style - border effect */
+
 main{
     background: white;
     top: 150px;
@@ -33,13 +39,17 @@ main{
     bottom: 150px;
     margin: auto;
 }
+
 /* main header & main nav style */
+
 .mainHeader{
     flex-wrap: nowrap;
     flex-direction: row;
     margin: auto;
     justify-content: space-around;
 }
+
+/* clip pour masquer le nom du logo libre de droit -> c'est moche sinon */
 .logo{
     clip-path: inset(0 0 17% 0);
 }
@@ -57,6 +67,7 @@ main{
 }
 
 /* menu burger */
+
 .burger{
     border: 1px solid white;
     width: 48px;
@@ -73,7 +84,9 @@ main{
     background: white;
     width: 100%;
 }
+
 /* section banniere */
+
 .banniere{
     max-height: 525px;
     overflow: hidden;
@@ -81,25 +94,85 @@ main{
 }
 .mainTitle{
     position: absolute;
-    top:0;
-    left:0;
-    transform: translateX(45%)translatey(85%);
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    top: 0;
+    color : white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
 }
 
-/* section "recap" */
-.recap{
+/* Button style */
+
+.button{
+	background-color:transparent;
+	border:2px solid #c71827;
+	display:inline-block;
+	cursor:pointer;
+	color:#e62058;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:15px 35px;
+	text-decoration:none;
+}
+.button:hover{
+	background-color:transparent;
+}
+.button:active{
+	position:relative;
+	top:1px;
+}
+
+/* section promoting */
+
+.promoting{
     flex-direction: row;
     flex-wrap: nowrap;
 }
+.iconesPromoting{
+    font-size: 1.8rem;
+    color: #DA5211;
+}
 
 /* galerie */
+
 .galerie{
     flex-wrap: wrap;
     flex-direction: row;
 }
+.picture{
+    width: calc(100% / 4);
+    position:relative;
+    /* position relative pour faire un overlay plus tard */
+    overflow:hidden;
+}
+
 /* client testimonials section */
-h2{
-    text-align: center;
+
+/* navigation & button */
+.testimonialsHeader{
+    justify-content: space-between;
+    height: 75px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+.testimonialsHeader nav{
+    width: 40%;
+    justify-content: space-around;
+}
+/* content of testimonial's section  */
+.usersIcone{
+    font-size:4rem;
+    color: #C22446;
+}
+.testimonials{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .divTestimonials{
     flex-direction: column;
@@ -110,9 +183,44 @@ h2{
     width: 75%;
 }
 /* new horizons section */
-.picture{
-    width: calc(100% / 4);
-    position:relative;
-    /* position relative pour faire un overlay plus tard */
-    overflow:hidden;
+
+.horizonSection{
+    background-image: url("../img/stars.jpg");
+    color: white;
+    height: 400px;
+}
+
+/* Contact section */
+
+.formContact{
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.formContact div{
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+/* main footer */
+.mainFooter{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+/* last footer */
+.lastFooter{
+    height: 80px;
+    width: 80%;
+    margin: auto;
+    color: white;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.lastFooter a{
+    color: white;
+}
+.lastFooter p{
+    margin: 0;
 }

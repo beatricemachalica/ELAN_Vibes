@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media_style.css">
 </head>
@@ -40,20 +43,20 @@
         <!-- section banniere -->
 
         <section class="banniere">
-            <figure class="figureBanniere"><img src="./img/bgImg.png" alt=""></figure>
+            <figure class="figureBanniere"><img src="./img/bgImg2.jpg" alt=""></figure>
             <div class="mainTitle">
                 <h1>HTML TEMPLATE FOR CREATIVE FOLKS AND DESIGN AGENCIES</h1>
                 <p>Far Far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
                     the
                     blind
                     texts.</p>
-                <a href="https://themeforest.net/">READ MORE</a>
+                <a class="button" href="https://themeforest.net/">READ MORE</a>
             </div>
         </section>
 
-        <!-- section recap -->
+        <!-- section promoting -->
 
-        <section class="recap flex">
+        <section class="promoting flex">
 
             <article>
                 <h3>Why Choose Us ?</h3>
@@ -66,17 +69,17 @@
             <article>
                 <h3>What You Get ?</h3>
                 <div>
-                    <img src="" alt="logo CMS">
+                    <i class="fab fa-wordpress iconesPromoting"></i>
                     <p><em>COLORFUL & COMPACT</em></p>
                     <p>Portfolio WordPress Theme</p>
                 </div>
                 <div>
-                    <img src="" alt="icone engrenage">
+                    <i class="fas fa-cog iconesPromoting"></i>
                     <p><em>VERY EASY TO USE</em></p>
                     <p>Page Builder & Shortcodes</p>
                 </div>
                 <div>
-                    <img src="" alt="icone avion">
+                    <i class="fas fa-paper-plane iconesPromoting"></i>
                     <p><em>CODED WITH SASS</em></p>
                     <p>Create Custom Skins in Minutes</p>
                 </div>
@@ -105,21 +108,23 @@
 
         <!-- section Testimonials -->
 
-        <section class="testimonials">
-            <header class="testimonialsHeader flex">
-                <nav class="flex">
-                    <a href="#">ALL</a>
-                    <a href="#">AUDIO</a>
-                    <a href="#">IMAGE</a>
-                    <a href="#">VIDEO</a>
-                </nav>
-                <a href="">LOAD MORE</a>
-            </header>
+
+        <header class="testimonialsHeader flex">
+            <nav class="flex">
+                <a href="#">ALL</a>
+                <a href="#">AUDIO</a>
+                <a href="#">IMAGE</a>
+                <a href="#">VIDEO</a>
+            </nav>
+            <a class="button" href="">LOAD MORE</a>
+        </header>
+
+        <section class="testimonials flex">
             <h2>CLIENT TESTIMONIALS</h2>
             <div class="divTestimonials flex">
                 <article>
                     <div>
-                        <img src="" alt="icone utilisateur">
+                        <i class="fas fa-user-circle usersIcone"></i>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus reprehenderit iure
                             recusandae repellat, dolorum accusantium dolores autem earum doloribus soluta facere
                             eligendi
@@ -130,7 +135,7 @@
                 </article>
                 <article>
                     <div>
-                        <img src="" alt="icone utilisateur">
+                        <i class="fas fa-user-circle usersIcone"></i>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ipsum quod necessitatibus
                             temporibus
                             vitae ea.</p>
@@ -139,7 +144,7 @@
                 </article>
                 <article>
                     <div>
-                        <img src="" alt="icone utilisateur">
+                        <i class="fas fa-user-circle usersIcone"></i>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore velit repellat nisi dolore
                             facere?
                             Sapiente saepe atque rerum nihil accusamus.</p>
@@ -147,17 +152,17 @@
                     </div>
                 </article>
             </div>
-            <a href="https://themeforest.net/">BECOME OUR CLIENT</a>
+            <a class="button" href="https://themeforest.net/">BECOME OUR CLIENT</a>
         </section>
 
         <!-- section Horizon -->
 
-        <section>
+        <section class="horizonSection">
             <h2>NEW HORIZONS AWAIT</h2>
             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.
                 One
                 day however a small line of blind text by the name of Lorem Ipsum decided.</p>
-            <a href="https://themeforest.net/">BUY VIBES ON THEMEFOREST</a>
+            <a class="button" href="https://themeforest.net/">BUY VIBES ON THEMEFOREST</a>
         </section>
 
         <!-- section Contact -->
@@ -165,8 +170,8 @@
         <section>
             <h2>GET IN TOUCH</h2>
             <!-- formulaire de contact -->
-            <form action="" method="GET" class="formContact">
-                <div>
+            <form action="" method="GET" class="formContact flex">
+                <div class="flex">
                     <label for="name">YOUR NAME *</label>
                     <input type="text" name="name" id="name" required>
 
@@ -176,7 +181,7 @@
                     <label for="tel">YOUR PHONE</label>
                     <input type="tel" name="tel" id="tel">
                 </div>
-                <div>
+                <div class="flex">
                     <label for="subject">SUBJECT</label>
                     <input type="subject" name="subject" id="subject">
 
@@ -184,14 +189,14 @@
                     <input type="text" name="message" id="message" required>
 
                     <!-- button submit -->
-                    <input type="submit" value="SEND">
+                    <input class="button" type="submit" value="SEND">
                 </div>
             </form>
         </section>
 
         <!-- Footer -->
 
-        <footer>
+        <footer class="mainFooter flex">
             <article>
                 <h4>ABOUT VIBES</h4>
                 <p>VIBES is an ideal theme for creative folks or design agencies.<em>Ease of use and top-notch web
@@ -205,7 +210,7 @@
                 <p> <em>VIBES</em> contains fully working <em>MailChimp</em> subscribe form.</p>
                 <form action="" method="POST" class="formNewsletter">
                     <input type="email" name="emailNewsletter" id="emailNewsletter">
-                    <input type="submit" value="SUBSCRIBE">
+                    <input class="button" type="submit" value="SUBSCRIBE">
                 </form>
             </article>
             <article>
@@ -214,7 +219,15 @@
             </article>
         </footer>
     </main>
-    <!-- toujours mettre le script JS à la fin pour avoir un site rapide -->
+    <footer class="lastFooter flex">
+        <p>Buy this theme on ThemeForest.net</p>
+        <div>
+            <a href="https://themeforest.net/">Home</a>
+            <a href="https://themeforest.net/">Elements</a>
+            <a href="https://themeforest.net/">Documentation</a>
+        </div>
+    </footer>
+    <!-- toujours mettre le script JS à la fin avant la fermeture du body -->
     <script src="./js/app.js"></script>
 </body>
 
