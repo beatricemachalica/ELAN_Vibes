@@ -53,7 +53,7 @@
 
         <!-- section recap -->
 
-        <section class="recap">
+        <section class="recap flex">
 
             <article>
                 <h3>Why Choose Us ?</h3>
@@ -105,9 +105,9 @@
 
         <!-- section Testimonials -->
 
-        <section class="Testimonials">
-            <header class="testimonialsHeader">
-                <nav>
+        <section class="testimonials">
+            <header class="testimonialsHeader flex">
+                <nav class="flex">
                     <a href="#">ALL</a>
                     <a href="#">AUDIO</a>
                     <a href="#">IMAGE</a>
@@ -116,34 +116,37 @@
                 <a href="">LOAD MORE</a>
             </header>
             <h2>CLIENT TESTIMONIALS</h2>
-            <article>
-                <div>
-                    <img src="" alt="icone utilisateur">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus reprehenderit iure
-                        recusandae repellat, dolorum accusantium dolores autem earum doloribus soluta facere eligendi
-                        fuga
-                        laborum doloremque.</p>
-                    <p><em>Tommy Mars</em>Designer</p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <img src="" alt="icone utilisateur">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ipsum quod necessitatibus
-                        temporibus
-                        vitae ea.</p>
-                    <p><em>Florr Simons</em>Startup CEO</p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <img src="" alt="icone utilisateur">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore velit repellat nisi dolore
-                        facere?
-                        Sapiente saepe atque rerum nihil accusamus.</p>
-                    <p><em>Mick Neil</em>Rock Star</p>
-                </div>
-            </article>
+            <div class="divTestimonials flex">
+                <article>
+                    <div>
+                        <img src="" alt="icone utilisateur">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus reprehenderit iure
+                            recusandae repellat, dolorum accusantium dolores autem earum doloribus soluta facere
+                            eligendi
+                            fuga
+                            laborum doloremque.</p>
+                        <p><em>Tommy Mars</em> Designer</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <img src="" alt="icone utilisateur">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ipsum quod necessitatibus
+                            temporibus
+                            vitae ea.</p>
+                        <p><em>Florr Simons</em> Startup CEO</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <img src="" alt="icone utilisateur">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore velit repellat nisi dolore
+                            facere?
+                            Sapiente saepe atque rerum nihil accusamus.</p>
+                        <p><em>Mick Neil</em> Rock Star</p>
+                    </div>
+                </article>
+            </div>
             <a href="https://themeforest.net/">BECOME OUR CLIENT</a>
         </section>
 
@@ -190,7 +193,7 @@
 
         <footer>
             <article>
-                <h2>ABOUT VIBES</h2>
+                <h4>ABOUT VIBES</h4>
                 <p>VIBES is an ideal theme for creative folks or design agencies.<em>Ease of use and top-notch web
                         design
                         techniques</em> are wrapped with several gorgeous color schemes.</p>
@@ -198,7 +201,7 @@
                 </p>
             </article>
             <article>
-                <h2>NEWSLETTER</h2>
+                <h4>NEWSLETTER</h4>
                 <p> <em>VIBES</em> contains fully working <em>MailChimp</em> subscribe form.</p>
                 <form action="" method="POST" class="formNewsletter">
                     <input type="email" name="emailNewsletter" id="emailNewsletter">
@@ -206,11 +209,13 @@
                 </form>
             </article>
             <article>
-                <h2>TWITTER FEED</h2>
+                <h4>TWITTER FEED</h4>
                 <p></p>
             </article>
         </footer>
     </main>
+    <!-- toujours mettre le script JS à la fin pour avoir un site rapide -->
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

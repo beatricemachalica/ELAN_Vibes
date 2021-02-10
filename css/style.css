@@ -52,8 +52,26 @@ main{
     align-items: center;
 }
 .mainMenu a{
-    /* color: white; */
+    color: white;
     font-weight: bold;
+}
+
+/* menu burger */
+.burger{
+    border: 1px solid white;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.burger span{
+    height: 4px;
+    background: white;
+    width: 100%;
 }
 /* section banniere */
 .banniere{
@@ -67,11 +85,31 @@ main{
     left:0;
     transform: translateX(45%)translatey(85%);
 }
+
+/* section "recap" */
+.recap{
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 /* galerie */
 .galerie{
     flex-wrap: wrap;
     flex-direction: row;
 }
+/* client testimonials section */
+h2{
+    text-align: center;
+}
+.divTestimonials{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 75%;
+}
+/* new horizons section */
 .picture{
     width: calc(100% / 4);
     position:relative;
