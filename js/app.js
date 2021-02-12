@@ -1,0 +1,1 @@
+// On utilise ECMAScript 2015 ES6

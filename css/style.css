@@ -20,14 +20,32 @@ a{
 }
 h2{
     text-align: center;
+    font-size: 1.8rem;
+}
+/* pseudo border for titles */
+.pseudo_border {
+    position:relative;
+    display:inline-block;
+}
+.pseudo_border:after {
+    content:'';
+    position:absolute;
+    left:0;right:0;
+    top:100%;
+    margin: 10px auto;
+    width:50%;
+    height:6px;
+    background: rgb(194, 85, 104);
 }
 
 /* body style */
 
 body{
     margin: 0;
+    /* background: rgb(180,58,128); */
+    /* background: linear-gradient(8deg, rgba(180,58,128,1) 15%, rgb(207, 16, 16) 50%, rgb(228, 140, 18) 79%); */
     background: rgb(180,58,128);
-    background: linear-gradient(8deg, rgba(180,58,128,1) 15%, rgb(207, 16, 16) 50%, rgb(228, 140, 18) 79%);
+    background: linear-gradient(8deg, rgba(180,58,128,0.8323530095632002) 15%, rgba(253,29,29,0.6698880235688025) 50%, rgba(252,176,69,0.9275911048012955) 79%);
 }
 
 /* main style - border effect */
@@ -84,6 +102,27 @@ main{
     background: white;
     width: 100%;
 }
+/* Button style */
+
+.button{
+    background-color:transparent;
+    border:2px solid #c71827;
+    display:inline-block;
+    cursor:pointer;
+    color:#e62058;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:15px 35px;
+    text-decoration:none;
+}
+.button:hover{
+    background-color:transparent;
+}
+.button:active{
+    position:relative;
+    top:1px;
+}
 
 /* section banniere */
 
@@ -98,34 +137,18 @@ main{
     right: 0;
     bottom: 0px;
     top: 0;
-    color : white;
+    color : rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
+    text-align: center;
+    padding: 90px 200px 75px 200px;
 }
-
-/* Button style */
-
-.button{
-	background-color:transparent;
-	border:2px solid #c71827;
-	display:inline-block;
-	cursor:pointer;
-	color:#e62058;
-	font-family:Arial;
-	font-size:20px;
-	font-weight:bold;
-	padding:15px 35px;
-	text-decoration:none;
-}
-.button:hover{
-	background-color:transparent;
-}
-.button:active{
-	position:relative;
-	top:1px;
+.mainTitle .button{
+    color: white;
+    border:2px solid white;
 }
 
 /* section promoting */
@@ -133,10 +156,34 @@ main{
 .promoting{
     flex-direction: row;
     flex-wrap: nowrap;
+    padding: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+.promoting article{
+    width: calc(95%/3);
 }
 .iconesPromoting{
     font-size: 1.8rem;
     color: #DA5211;
+}
+h3{
+    font-size: 1.7rem;
+    color: rgb(50, 50, 50);
+}
+.special{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.promoting p{
+    color: gray;
+}
+.whatYouGet div{
+    align-items: center;
+}
+.whatYouGet i{
+    margin-right: 15px;
 }
 
 /* galerie */
@@ -188,10 +235,28 @@ main{
     background-image: url("../img/stars.jpg");
     color: white;
     height: 400px;
+    flex-direction: column;
+    align-items: center;
+}
+.horizonSection h2{
+    padding-top: 25px;
+}
+.horizonSection p{
+    margin: 45px 155px 45px 155px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.horizonSection .button{
+    color: white;
+    border:2px solid rgb(194, 85, 104);  
 }
 
 /* Contact section */
-
+.contact{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+}
 .formContact{
     flex-direction: row;
     flex-wrap: nowrap;
@@ -200,6 +265,29 @@ main{
     flex-direction: column;
     flex-wrap: nowrap;
 }
+.contact form{
+    width: 100%;
+    padding: 55px;
+    justify-content: space-between;
+}
+.contact form div{
+    width: calc(95%/2);
+}
+.contact form div #name,#email,#tel,#subject,#message{
+    background: rgb(228, 227, 227);
+    border: none;
+    height: 40px;
+    margin: 20px 0 20px 0;
+}
+#message{
+    height: 140px;
+}
+.contact .button{
+    color: white;
+    background: rgb(218, 82, 17);
+    width: 35%;
+    font-size: 1rem;
+}
 
 /* main footer */
 .mainFooter{
@@ -207,6 +295,20 @@ main{
     flex-wrap: nowrap;
     background-color: rgb(26, 26, 26);
     color: white;
+}
+.mainFooter article{
+    width: calc(100%/3);
+    padding: 75px;
+}
+#emailNewsletter{
+    background-color: gray;
+    padding: 10px;
+    border: none;
+    margin-bottom: 15px;
+}
+.mainFooter .button{
+    color: white;
+    border:2px solid rgb(194, 85, 104);
 }
 
 /* last footer */
