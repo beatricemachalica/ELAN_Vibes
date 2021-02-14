@@ -75,13 +75,14 @@ main{
     width: 10%;
 }
 .mainMenu{
-    width: 40%;
+    width: 50%;
     justify-content: space-between;
     align-items: center;
 }
 .mainMenu a{
     color: white;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 /* menu burger */
@@ -156,13 +157,13 @@ main{
 .promoting{
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 45px;
+    padding: 60px;
     margin-left: 20px;
     margin-right: 20px;
     justify-content: space-between;
 }
 .promoting article{
-    width: calc(95%/3);
+    width: calc(80%/3);
 }
 .iconesPromoting{
     font-size: 1.8rem;
@@ -198,37 +199,76 @@ h3{
     /* position relative pour faire un overlay plus tard */
     overflow:hidden;
 }
-
-/* client testimonials section */
+/* Testimonials */
 
 /* navigation & button */
 .testimonialsHeader{
     justify-content: space-between;
     height: 75px;
     border-bottom: 1px solid rgb(209, 209, 209);
+    height: 155px;
 }
+
 .testimonialsHeader nav{
-    width: 40%;
+    width: 25%;
     justify-content: space-around;
+    align-items: center;
+    margin-left: 80px;
 }
+.testimonialsHeader nav a{
+    color: gray;
+}
+.testimonialsHeader nav a:hover{
+    color: indianred;
+}
+
+.testimonialsHeader .button{
+    font-size: 14px;
+    height: 45px;
+    align-self: center;
+    margin-right: 55px;
+}
+
 /* content of testimonial's section  */
-.usersIcone{
-    font-size:4rem;
-    color: #C22446;
-}
+
 .testimonials{
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+.italic{
+    color: rgb(90, 90, 90);
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+.divTestimonials img{
+    width: 9%;
+    margin: 15px;
+}
+
+.divTestimonials .middle{
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+.divTestimonials article{
+    margin-top: 35px;
+}
+
 .divTestimonials{
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
     width: 75%;
 }
+
+.testimonials .button{
+    font-size: 15px;
+    margin: 40px;
+}
+
 /* new horizons section */
 
 .horizonSection{
