@@ -138,6 +138,13 @@
     .secondNav nav{
         width: 35%;
     }
+    /* promoting section */
+    .promoting{
+        flex-wrap: wrap;
+    }
+    .promoting article{
+        width: auto;
+    }
     /* contact */
     .formContact .button{
         width: 40%;
