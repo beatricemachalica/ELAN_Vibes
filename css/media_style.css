@@ -5,7 +5,7 @@
     }
     /* logo */
     .logoA{
-        width: 18%;
+        width: 35%;
     }
     .mainHeader{
         width: 100%;
@@ -13,19 +13,83 @@
     .mainMenu{
         display: none;
     }
+    /* menu burger */
+    .burger{
+        z-index: 3;
+    }
+    .visible{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.9);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .visible a{
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
     /* banner */
-    .mainTitle{
-        padding: 15px;
+    .banniere{
+        display: none;
+    }
+    /* Section promoting */
+    .promoting{
+        padding: 0;
+        flex-wrap: wrap;  
+    }
+    .promoting article{
+        width: 100%;
+    }
+    /* galerie */
+    .picture{
+        width: 100%;
     }
     /* galerie nav */
+    .secondNav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .secondNav nav{
-        width: 35%;
+        width: 100%;
+        margin: 0;
+    }
+    .secondNav .button{
+        margin: 0;
+    }
+    /* testimonoals */
+    .divTestimonials img{
+        display: none;
+    }
+    /* New Horizons */
+    .horizonSection p{
+        margin: 20px;
+    }
+    .horizonSection .button{
+        font-size: 15px;
+        padding: 10px 30px;
     }
     /* contact */
+    .contact form{
+        padding: 20px;
+    }
+    .formContact{
+        flex-wrap: wrap;
+    }
+    .contact form div{
+        width: 100%;
+    }
     .formContact .button{
         width: 40%;
     }
     /* footer */
+    .mainFooter{
+        flex-wrap: wrap;
+    }
     .mainFooter article{
         width: 100%;
         padding: 20px;
@@ -45,6 +109,26 @@
     }
     .mainMenu{
         display: none;
+    }
+    /* menu burger */
+    .burger{
+        z-index: 3;
+    }
+    .visible{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.9);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .visible a{
+        font-size: 1.5rem;
+        margin-bottom: 40px;
     }
     /* banner */
     .mainTitle{
