@@ -1,6 +1,6 @@
 // On utilise ECMAScript 2015 ES6
-document.querySelector('.burger').addEventListener("click", function (){
-    document.querySelector("nav").classList.toggle("visible");
+document.querySelector(".burger").addEventListener("click", function () {
+  document.querySelector("nav").classList.toggle("visible");
 });
 
 // fonctionnement :
@@ -12,6 +12,6 @@ document.querySelector('.burger').addEventListener("click", function (){
 // toggle = alterner un état vers un autre
 
 // button go to top :
-function scrolltotop(){
-    window.scrollTo({top: 0, behavior : 'smooth'});
+function scrolltotop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
