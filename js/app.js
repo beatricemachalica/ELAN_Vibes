@@ -12,6 +12,12 @@ document.querySelector(".burger").addEventListener("click", function () {
 // toggle = alterner un état vers un autre
 
 // button go to top :
+
 function scrolltotop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+// Animated Accordion :
+
+// on va créer un array titles qui va contenir tous les h3
+const titles = document.querySelectorAll(".accordion h3");
