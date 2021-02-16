@@ -170,7 +170,7 @@ main {
 .button:hover {
   /* background-color:transparent; */
   background: #e62058;
-  opacity: 0.7;
+  opacity: 0.8;
   color: white;
 }
 .button:active {
@@ -239,6 +239,14 @@ h3 {
 .whatYouGet i {
   margin-right: 15px;
 }
+.threeDetails {
+  display: flex;
+  flex-direction: column;
+  margin: 27.2px;
+}
+.threeDetails summary {
+  cursor: pointer;
+}
 
 /* galerie */
 
@@ -249,8 +257,26 @@ h3 {
 .picture {
   width: calc(100% / 4);
   position: relative;
-  /* position relative pour faire un overlay plus tard */
   overflow: hidden;
+}
+.picture:hover .overlay {
+  opacity: 0.8;
+}
+.overlay {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: #e25f75;
+  transition: opacity 0.25s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
 }
 
 /* navigation & button */
@@ -331,6 +357,7 @@ h3 {
 
 .horizonSection {
   background-image: url("../img/stars.jpg");
+  background-attachment: fixed;
   color: white;
   height: 400px;
   flex-direction: column;

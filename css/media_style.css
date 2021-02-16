@@ -3,7 +3,12 @@
   main {
     width: 100%;
   }
+  /* color picker */
   .colorPicker {
+    display: none;
+  }
+  /* button go to top */
+  .gotop {
     display: none;
   }
   /* logo */
@@ -122,8 +127,14 @@
   main {
     width: 100%;
   }
+  /* color picker */
   .colorPicker {
     display: none;
+  }
+  /* to top button */
+  .gotop {
+    right: 1%;
+    top: 65%;
   }
   /* logo */
   .logoA {
@@ -167,7 +178,11 @@
     flex-wrap: wrap;
   }
   .promoting article {
-    width: auto;
+    width: 100%;
+  }
+  /* galerie */
+  .picture {
+    width: calc(100% / 2);
   }
   /* galerie nav */
   .secondNav nav {
@@ -181,6 +196,13 @@
   .divTestimonials article {
     align-items: center;
   }
+
+  /* new horizons */
+  .horizonSection .button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
   /* contact */
   .formContact .button {
     width: 40%;
