@@ -3,6 +3,9 @@
     main{
         width: 100%;
     }
+    .colorPicker{
+        display: none;
+    }
     /* logo */
     .logoA{
         width: 35%;
@@ -116,6 +119,9 @@
     main{
         width: 100%;
     }
+    .colorPicker{
+        display: none;
+    }
     /* logo */
     .logoA{
         width: 18%;
@@ -150,16 +156,24 @@
     .mainTitle{
         padding: 15px;
     }
-    /* galerie nav */
-    .secondNav nav{
-        width: 35%;
-    }
     /* promoting section */
     .promoting{
         flex-wrap: wrap;
     }
     .promoting article{
         width: auto;
+    }
+    /* galerie nav */
+    .secondNav nav{
+        width: 35%;
+    }
+    .secondNav .button{
+        padding: 10px 35px;
+    }
+
+    /* testimonials */
+    .divTestimonials article{
+        align-items: center;
     }
     /* contact */
     .formContact .button{
