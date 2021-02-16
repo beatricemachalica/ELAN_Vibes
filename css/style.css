@@ -39,6 +39,23 @@ em {
   top: 225px;
   cursor: pointer;
 }
+/* to top button */
+.gotop {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1.2rem;
+  position: fixed;
+  right: 10%;
+  top: 70%;
+  z-index: 3;
+}
+
+.gotop i {
+  font-size: 1.5em;
+  color: gray;
+  cursor: pointer;
+}
 /* titles pseudo border */
 .pseudo_border {
   position: relative;
@@ -402,19 +419,7 @@ h3 {
   color: white;
   border: 3px solid rgb(194, 85, 104);
 }
-/* to top button */
 
-.gotop {
-  border: none;
-  background: none;
-  outline: none;
-}
-
-.gotop i {
-  font-size: 1.5em;
-  color: gray;
-  cursor: pointer;
-}
 /* last footer */
 .lastFooter {
   height: 80px;
