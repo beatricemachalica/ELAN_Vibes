@@ -251,6 +251,7 @@ h3{
 }
 
 .secondNav .button{
+    padding: 10px 35px;
     font-size: 14px;
     height: 45px;
     align-self: center;
