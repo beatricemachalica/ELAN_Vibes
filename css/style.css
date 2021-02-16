@@ -126,6 +126,10 @@ main{
     background: white;
     width: 100%;
 }
+/* hide menu burger on desktop */
+.burger{
+    display: none;
+}
 /* Button style */
 
 .button{

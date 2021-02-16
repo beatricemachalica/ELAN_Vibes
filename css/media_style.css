@@ -20,6 +20,9 @@
     .burger{
         z-index: 3;
     }
+    .burger{
+        display: flex;
+    }
     .visible{
         position: absolute;
         top: 0;
@@ -135,6 +138,9 @@
     /* menu burger */
     .burger{
         z-index: 3;
+    }
+    .burger{
+        display: flex;
     }
     .visible{
         position: absolute;
