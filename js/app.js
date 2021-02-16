@@ -10,3 +10,8 @@ document.querySelector('.burger').addEventListener("click", function (){
 // dans le doc, on recherche le selecteur "nav", on regarde sa liste de classe, et on lui demande
 // d'alterner entre ajouter/supprimer la classe "visible"
 // toggle = alterner un état vers un autre
+
+// button go to top :
+function scrolltotop(){
+    window.scrollTo({top: 0, behavior : 'smooth'});
+}

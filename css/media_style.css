@@ -34,8 +34,20 @@
         margin-bottom: 40px;
     }
     /* banner */
-    .banniere{
+    .figureBanniere{
         display: none;
+    }
+    .mainTitle{
+        color: grey;
+        padding: 5px;
+        position: relative;
+    }
+    .mainTitle h1{
+        color:#313131; 
+    }
+    .mainTitle .button{
+        color:#e62058;
+        border:3px solid #c71827;
     }
     /* Section promoting */
     .promoting{
@@ -84,15 +96,19 @@
         width: 100%;
     }
     .formContact .button{
-        width: 40%;
+        width: 100%;
     }
     /* footer */
     .mainFooter{
         flex-wrap: wrap;
+        text-align: center;
     }
     .mainFooter article{
         width: 100%;
         padding: 20px;
+    }
+    .mainFooter .button{
+        width: 100%;
     }
 }
 /* media query pour tablettes */
