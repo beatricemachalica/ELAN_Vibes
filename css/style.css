@@ -215,7 +215,7 @@ main {
   justify-content: space-between;
 }
 .promoting article {
-  width: calc(80% / 3);
+  width: calc(80% / 4);
 }
 .iconesPromoting {
   font-size: 1.8rem;
@@ -245,6 +245,40 @@ h3 {
 }
 .threeDetails summary {
   cursor: pointer;
+}
+
+/* Style accordion */
+
+.accordion {
+  margin-top: 27.2px;
+}
+.accordion div {
+  padding-left: 40px;
+  border: 1px solid grey;
+  margin-bottom: 0.8rem;
+}
+.accordion div h3 {
+  position: relative;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.accordion div h3::before {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  content: "\f067";
+  left: -20px;
+  color: purple;
+  font-size: 0.8rem;
+}
+.accordion div p {
+  display: none;
+}
+.accordion .panel-active p {
+  display: block;
+}
+
+.accordion .panel-active h3::before {
+  content: "\f068";
 }
 
 /* galerie */
