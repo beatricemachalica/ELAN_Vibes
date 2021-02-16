@@ -358,6 +358,10 @@ h3{
 #message{
     height: 140px;
 }
+.pink{
+    color: red;
+    font-size: 1.5rem;
+}
 .contact .button{
     color: white;
     background: #e25f75;
