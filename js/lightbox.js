@@ -11,9 +11,11 @@ for(let figure of figures){
     lightbox(this);
   });
 }
+
 function lightbox(elem){
   // on récupère le contenu du src, du premier enfant img de la figure sur laquelle on clique
   Let src = elem.children[0].src;
+  Let lightbox = document.querySelector('.lightbox');
 
   // on fait apparaitre la lightbox avec l'image complétée
   document.querySelector('body').innerHTML += 

@@ -61,7 +61,7 @@ em {
 .lightbox {
   position: fixed;
   opacity: 0;
-  z-index: -1;
+  /* z-index: -1; */
   top: 0;
   left: 0;
   z-index: 10;
@@ -76,6 +76,9 @@ em {
   width: 100%;
   color: white;
 }
+#lightImage {
+  width: 80%;
+}
 #lightLeft,
 #lightRight {
   padding: 0.7rem;
@@ -85,11 +88,7 @@ em {
   font-size: 2rem;
   transition: opacity 0.3s ease;
 }
-#lightLeft:hover,
-#lightRight:hover {
-  opacity: 1;
-}
-.lightClose {
+#lightClose {
   position: absolute;
   top: 2%;
   right: 2%;
@@ -98,7 +97,11 @@ em {
   font-size: 2rem;
   color: white;
 }
-
+#lightLeft:hover,
+#lightRight:hover,
+#lightClose:hover {
+  opacity: 1;
+}
 /* titles pseudo border */
 .pseudo_border {
   position: relative;
