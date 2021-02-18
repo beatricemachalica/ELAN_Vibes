@@ -326,11 +326,11 @@ h3 {
 
 /* galerie */
 
-.galerie {
+.gallery-items {
   flex-wrap: wrap;
   flex-direction: row;
 }
-.galerie figcaption a {
+.gallery-items figcaption a {
   text-decoration: none;
   color: white;
 }

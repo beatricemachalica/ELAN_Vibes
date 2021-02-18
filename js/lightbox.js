@@ -1,5 +1,5 @@
 // gallery
-const figures = document.querySelectorAll('.galerie figure');
+const figures = document.querySelectorAll('.gallery-items figure');
 
 for(let figure of figures){
   figure.addEventListener('click',function(e){
