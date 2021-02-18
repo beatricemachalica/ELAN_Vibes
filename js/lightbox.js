@@ -54,15 +54,15 @@ function lightboxOn(elem) {
   // au clique sur arrow left
   document.querySelector("#lightLeft").addEventListener("click", function () {
     // on récupère la figure précédente de celui du current
-    prevElem = currentElem.prevElementSibling;
+    prevElem = currentElem.previousElementSibling;
     // si le voisin précédent est null
     if (prevElem === null) {
       prevElem = currentElem.parentElement.lastElementChild;
     }
-    while (prevElem.style.display === "none") {
-      currentElem = prevElem;
-      prevElem = currentElem.prevElementSibling;
-    }
+    // while (prevElem.style.display === "none") {
+    //   currentElem = prevElem;
+    //   prevElem = currentElem.prevElementSibling;
+    // }
     currentElem = prevElem;
     // on récupère l'adresse de l'image à afficher
     let src = prevElem.children[0].src;
@@ -79,10 +79,10 @@ function lightboxOn(elem) {
     if (nextElem === null) {
       nextElem = currentElem.parentElement.firstElementChild;
     }
-    while (nextElem.style.display === "none") {
-      currentElem = nextElem;
-      nextElem = currentElem.nextElementSibling;
-    }
+    // while (nextElem.style.display === "none") {
+    //   currentElem = nextElem;
+    //   nextElem = currentElem.nextElementSibling;
+    // }
     currentElem = nextElem;
     // on récupère l'adresse de l'image à afficher
     let src = nextElem.children[0].src;
